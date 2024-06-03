@@ -1,6 +1,7 @@
 import org.example.models.DeluxeBurger;
 import org.example.models.Hamburger;
 import org.example.models.HealthyBurger;
+import org.example.models.enums.BreadRollType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,8 +21,8 @@ public class MainTest {
 
     @BeforeEach
     void setUp() {
-        hamburger = new Hamburger("Basic", "NORMAL", 4, "WRAP");
-        healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
+        hamburger = new Hamburger("Basic", "NORMAL", 4, BreadRollType.WRAP);
+        healthyBurger = new HealthyBurger("Vegan Burger", 5.67, BreadRollType.SANDWICH);
         deluxeBurger = new DeluxeBurger();
     }
 
