@@ -1,7 +1,7 @@
 package org.example.models;
 
 import org.example.models.enums.BreadRollType;
-import org.example.models.enums.DrinkType;
+
 
 public class DeluxeBurger extends Hamburger{
     private Drink drink;
@@ -11,6 +11,14 @@ public class DeluxeBurger extends Hamburger{
         super("DELUXE BURGER","DOUBLE",19.90,breadRollType );
         this.drink = drink;
         this.cips = cips;
+    }
+
+    public Drink getDrink() {
+        return drink;
+    }
+
+    public Cips getCips() {
+        return cips;
     }
 
     @Override
